@@ -1,10 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Andy Ng Boon Hou</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+<body id="top">
+    <nav class="navbar fixed-top" id="nav">
+        <h2>
+            <a href="#top">Andy Ng Boon Hou</a>
+        </h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="img text-white d-flex justify-content-center align-items-center flex-column">
+        <h1 class="p-2 text-center m-0">Full Stack<br> Web Developer</h1>
+        <p class="p-2 w-50" id="about">Hi There, I'm Andy. A Web Developer with an Engineering background who is excited about building Web applications that will benefit the masses, similar to how technology has improved our lives over the past decade.</p>
+    </section>
+
+    <section class="about mx-auto">
+        <h2 class="text-info">About Me</h2>
+        <p>I have always been interested in Technology, seeing how information is now easily accessible via the Internet and how the number of useful Software products out there changed the way we live for the better.</p>
+        <p>Therefore, I began self-learning HTML, CSS and Javascript in the middle of 2018. My interest grew from there and eventually I enrolled in General Assembly's Software Engineering Immersive course to further develop my skills. Frameworks/Libraries covered during the course includes React.js, Ruby on Rails, Express.js, etc</p>
+        <p id="projects">Moving forward, I am currently looking for Full-Stack/Front-End development positions where I can apply the skills I have learned and continue to grow as a Developer. Do check out some of my projects below!</p>
+        <h2 class="text-info">My Projects</h2>
+        <hr>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <a href="https://chocoreact.herokuapp.com/">
+                    <img src="images/choco react.png" class="proj-img">
+                    <h3 class="text-info">Choco React</h3>
+                </a>
+                  <p>A chocolate E-commerce Website built with React.js, Ruby on Rails and integrated with Stripe payment API.</p>
+            </div>
+            <div class="col">
+                <a href="https://readditt.herokuapp.com/books">
+                    <img src="images/readdit.png" class="proj-img">
+                    <h3 class="text-info">Readdit</h3>
+                </a>
+              <p>Don't know what book you should read next? Readdit is a platform for Book Lovers to review books they read so other like-minded readers know which book is up next in their reading list! Readdit was built with Ruby on Rails.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="https://geekharp.github.io/word-guessing-game/">
+                    <img src="images/word guessing game.png" class="proj-img">
+                    <h3 class="text-info">Guess the WORDs</h3>
+                </a>
+                <p>Test your ability in recognizing Scrambled word or play a game of Hangman with friends with Guess the WORDs. This project is written using pure HTML, CSS and Javascript for DOM Manipulation.</p>
+            </div>
+            <div class="col"></div>
+        </div>
+    </section>
+    <footer class="mx-auto" id="contact">
+        <hr>
+        <h3 class="text-info">CONTACT ME</h3>
+        <a href="mailto: ngbhandy@gmail.com">
+            <img src="images/mail.svg" style="width:45px;">
+        </a>
+        <a href="https://github.com/GeekHarp">
+            <img src="images/github.svg" style="width:45px;">
+        </a>
+        <a href="https://www.linkedin.com/in/andyngboonhou/">
+            <img src="images/linkedin.svg" style="width:45px;">
+        </a>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
