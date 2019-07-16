@@ -5,6 +5,7 @@ html {
 body {
 	font-family: 'Roboto Slab', serif;
 	background-color: #f6f6f6;
+	position: absolute;
 }
 
 .navbar {
