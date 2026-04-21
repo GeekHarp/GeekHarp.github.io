@@ -65,12 +65,13 @@ export interface Project<S extends string = string> extends Item<S> {
 		to?: Date;
 	};
 	type: string;
-	skills: Array<Skill<S>>;
+	skills?: Array<Skill<S>>;
+	thumbnail?: string;
 }
 
 export interface Experience<S extends string = string> extends Project<S> {
 	company: string;
-	location: string;
+	location?: string;
 	contract: ContractType;
 }
 

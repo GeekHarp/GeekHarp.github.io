@@ -18,7 +18,8 @@ const categories = [
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
+	defineSkillCategory({ name: 'Runtimes and Environments', slug: 'runtime-env' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -140,7 +141,63 @@ const items = [
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'library'
-	})
+	}),
+	defineSkill({
+		slug: 'nodejs',
+		color: 'green',
+		description: '',
+		logo: Assets.NodeJs,
+		name: 'Node.js',
+		category: 'runtime-env'
+	}),
+	defineSkill({
+		slug: 'nextjs',
+		color: 'gray',
+		description: '',
+		logo: Assets.NextJS,
+		name: 'Next.js',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'expressjs',
+		color: 'gray',
+		description: '',
+		logo: Assets.ExpressJs,
+		name: 'Express.js',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'java',
+		color: 'orange',
+		description: '',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'postgresql',
+		color: 'blue',
+		description: '',
+		logo: Assets.PostgreSQL,
+		name: 'PostgreSQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'bootstrap',
+		color: 'green',
+		description: '',
+		logo: Assets.Bootstrap,
+		name: 'Bootstrap',
+		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'tailwind',
+		color: 'blue',
+		description: '',
+		logo: Assets.Tailwind,
+		name: 'Tailwind CSS',
+		category: 'markup-style'
+	}),
 ] as const;
 
 const SkillsData = {

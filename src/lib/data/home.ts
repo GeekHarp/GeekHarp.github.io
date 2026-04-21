@@ -11,12 +11,11 @@ const hero: {
 } = {
 	title: `${BaseData.fullName},`,
 	description:
-		'lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+		'Hello world! I am Andy, a Senior Software Developer with an Engineering background. I have extensive experience in building reliable web applications using a variety of frameworks and technologies, including React, Node.js, etc. I have a strong enthusiasm for acquiring new skills. I am continuously seeking new challenges to further my growth as a developer.',
 	links: [
-		{ label: 'GitHub', href: 'https://github.com', icon: 'i-carbon-logo-github' },
-		{ label: 'LinkedIn', href: 'https://linkedin.com', icon: 'i-carbon-logo-linkedin' },
-		{ label: 'Twitter', href: 'https://twitter.com', icon: 'i-carbon-logo-twitter' },
-		{ label: 'Email', href: 'mailto:riadh.adrani@pm.me', icon: 'i-carbon-at' }
+		{ label: 'GitHub', href: 'https://github.com/geekHarp', icon: 'i-carbon-logo-github' },
+		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/andyngboonhou/', icon: 'i-carbon-logo-linkedin' },
+		{ label: 'Email', href: 'mailto:ngbhandy@gmail.com', icon: 'i-carbon-at' }
 	]
 };
 

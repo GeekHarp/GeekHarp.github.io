@@ -69,7 +69,11 @@ const Assets = {
 	Jest: asset('jest.png'),
 	Unocss: asset('unocss.svg'),
 	Ruvy: asset('ruvy.svg'),
-	Postcss: asset('postcss.svg')
+	Postcss: asset('postcss.svg'),
+	NextJS: asset('nextjs.png', 'nextjs-dark.png'),
+	Findjobs: asset('findjobs.png'),
+	AppliedMaterials: asset('applied-materials.png'),
+	Ufinity: asset('ufinity.png')
 };
 
 export default Assets;

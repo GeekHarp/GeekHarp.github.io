@@ -64,7 +64,8 @@
 		{#if result.length === 0}
 			<EmptyResult />
 		{:else}
-			<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+			<!-- <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"> -->
+			<div class="flex flex-col gap-4">
 				{#each result as it (it.slug)}
 					<ProjectCard project={it} />
 				{/each}

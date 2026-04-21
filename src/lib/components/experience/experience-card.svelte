@@ -2,9 +2,9 @@
 	import Assets from '$lib/data/assets';
 	import type { Experience } from '$lib/data/types';
 	import { computeExactDuration, getMonthAndYear, href } from '$lib/utils';
-	import { ellipsify } from '@riadh-adrani/utils';
+	// import { ellipsify } from '@riadh-adrani/utils';
 	import { mode } from 'mode-watcher';
-	import SkillBadge from '../common/skill-badge/skill-badge.svelte';
+	// import SkillBadge from '../common/skill-badge/skill-badge.svelte';
 	import { Avatar, AvatarFallback } from '../ui/avatar';
 	import AvatarImage from '../ui/avatar/avatar-image.svelte';
 	import { Badge } from '../ui/badge';
@@ -30,7 +30,7 @@
 	] as const);
 </script>
 
-<FancyCard color={it.color} href={href(`/experience/${it.slug}`)}>
+<FancyCard color={it.color}>
 	<CardContent class="flex flex-col gap-8 sm:flex-row">
 		<Avatar>
 			<AvatarFallback>
@@ -71,12 +71,12 @@
 					<TooltipContent side="bottom">Exact duration</TooltipContent>
 				</TooltipTrigger>
 			</Tooltip>
-			<div class="py-2 text-sm text-muted-foreground">{ellipsify(it.shortDescription, 150)}</div>
-			<div class="flex flex-row flex-wrap gap-2">
+			<div class="py-2 text-md">{@html it.shortDescription}</div>
+			<!-- <div class="flex flex-row flex-wrap gap-2">
 				{#each it.skills as skill (skill.slug)}
 					<SkillBadge {skill} />
 				{/each}
-			</div>
+			</div> -->
 		</div>
 	</CardContent>
 </FancyCard>

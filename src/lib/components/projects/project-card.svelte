@@ -1,18 +1,18 @@
 <script lang="ts">
-	import Assets from '$lib/data/assets';
+	// import Assets from '$lib/data/assets';
 	import type { Project } from '$lib/data/types';
-	import { computeExactDuration, getMonthAndYear, href } from '$lib/utils';
-	import { ellipsify } from '@riadh-adrani/utils';
-	import { mode } from 'mode-watcher';
+	// import { computeExactDuration, getMonthAndYear, href } from '$lib/utils';
+	// import { ellipsify } from '@riadh-adrani/utils';
+	// import { mode } from 'mode-watcher';
 	import ButtonLink from '../common/button-link/button-link.svelte';
 	import SkillBadge from '../common/skill-badge/skill-badge.svelte';
-	import AvatarFallback from '../ui/avatar/avatar-fallback.svelte';
-	import AvatarImage from '../ui/avatar/avatar-image.svelte';
-	import Avatar from '../ui/avatar/avatar.svelte';
-	import Badge from '../ui/badge/badge.svelte';
+	// import AvatarFallback from '../ui/avatar/avatar-fallback.svelte';
+	// import AvatarImage from '../ui/avatar/avatar-image.svelte';
+	// import Avatar from '../ui/avatar/avatar.svelte';
 	import Button from '../ui/button/button.svelte';
 	import { CardHeader } from '../ui/card';
 	import CardContent from '../ui/card/card-content.svelte';
+	import CardLogo from '../ui/card/card-logo.svelte'
 	import CardTitle from '../ui/card/card-title.svelte';
 	import FancyCard from '../ui/card/fancy-card.svelte';
 	import {
@@ -28,23 +28,24 @@
 
 	const { project }: { project: Project } = $props();
 
-	let from = $derived(getMonthAndYear(project.period.from));
-	let to = $derived(getMonthAndYear(project.period.to));
-	let exactDuration = $derived(computeExactDuration(project.period.from, project.period.to));
+	// let from = $derived(getMonthAndYear(project.period.from));
+	// let to = $derived(getMonthAndYear(project.period.to));
+	// let exactDuration = $derived(computeExactDuration(project.period.from, project.period.to));
 </script>
 
 <FancyCard
 	color={project.color}
 	class="flex h-full flex-col"
-	href={href(`/projects/${project.slug}`)}
 >
+	<!-- <CardLogo src={project.screenshot} alt={project.name} /> -->
 	<CardHeader class="flex w-full flex-col gap-4">
-		<Avatar>
+		<!-- <Avatar>
 			<AvatarFallback>
 				<img src={Assets.Unknown.light} alt={project.name} />
 			</AvatarFallback>
 			<AvatarImage src={$mode === 'dark' ? project.logo.dark : project.logo.light} />
-		</Avatar>
+		</Avatar> -->
+		<CardLogo src={project.thumbnail} alt={project.name} size={360} />
 		<div class="flex w-full flex-row items-center gap-1 overflow-x-hidden">
 			<CardTitle class="h-auto min-w-0 flex-1 overflow-x-hidden">
 				<Tooltip>
@@ -83,21 +84,21 @@
 		<Separator />
 	</CardHeader>
 	<CardContent class="flex flex-1 flex-col gap-4">
-		<Muted className="flex flex-row gap-2 items-center">
+		<!-- <Muted className="flex flex-row gap-2 items-center">
 			<Icon icon="i-carbon-assembly-cluster" />
 			<Muted>{project.type}</Muted>
 		</Muted>
 		<Muted className="flex flex-row gap-2 items-center">
 			<Icon icon="i-carbon-time" />
 			<Muted>{exactDuration}</Muted>
-		</Muted>
+		</Muted> -->
 		<Muted className="py-4 md:py-2 md:min-h-[100px] md:max-h-[100px]"
-			>{ellipsify(project.shortDescription, 100)}</Muted
+			>{project.shortDescription}</Muted
 		>
-		<div class="flex w-full flex-row items-center justify-between">
+		<!-- <div class="flex w-full flex-row items-center justify-between">
 			<Badge variant="outline">{from}</Badge>
 			<Badge variant="outline">{to}</Badge>
-		</div>
+		</div> -->
 		<Separator />
 		<div class="flex flex-row flex-wrap items-center gap-2">
 			{#each project.skills as skill (skill.slug)}

@@ -58,11 +58,11 @@
 		{/each}
 	</div>
 	<div class="hidden flex-row items-center justify-end gap-2 sm:flex sm:flex-1">
-		<a href={href('/search')}>
+		<!-- <a href={href('/search')}>
 			<Button variant="ghost" class="text-xl">
 				<Icon icon="i-carbon-search" />
 			</Button>
-		</a>
+		</a> -->
 		<Button variant="ghost" class="text-xl" on:click={toggleMode}>
 			<Icon icon={isDarkMode ? 'i-carbon-moon' : 'i-carbon-sun'} />
 		</Button>
@@ -96,7 +96,7 @@
 							</a>
 						</DialogClose>
 					{/each}
-					<Separator />
+					<!-- <Separator />
 					<DialogClose>
 						<a href={href('/search')} class="w-full">
 							<Button class="flex w-full flex-row items-center justify-start gap-2" variant="ghost">
@@ -104,7 +104,7 @@
 								<div>Search</div>
 							</Button>
 						</a>
-					</DialogClose>
+					</DialogClose> -->
 					<Separator />
 					<Button
 						class="flex w-full flex-row items-center justify-start gap-2"
