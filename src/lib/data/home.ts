@@ -11,7 +11,7 @@ const hero: {
 } = {
 	title: `${BaseData.fullName},`,
 	description:
-		'Hello world! I am Andy, a Senior Software Developer with an Engineering background. I have extensive experience in building reliable web applications using a variety of frameworks and technologies, including React, Node.js, etc. I have a strong enthusiasm for acquiring new skills. I am continuously seeking new challenges to further my growth as a developer.',
+		'Hello world! I am Andy, a Software Developer with an Engineering background. I have extensive experience in building reliable web applications using a variety of frameworks and technologies, including React, Node.js, etc. I have a strong enthusiasm for acquiring new skills. I am continuously seeking new challenges to further my growth as a developer.',
 	links: [
 		{ label: 'GitHub', href: 'https://github.com/geekHarp', icon: 'i-carbon-logo-github' },
 		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/andyngboonhou/', icon: 'i-carbon-logo-linkedin' },
