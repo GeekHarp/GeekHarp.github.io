@@ -19,10 +19,10 @@ const items: Array<Experience> = [
 		links: [],
 		logo: Assets.Ufinity,
 		shortDescription: `
-		<p style="margin-bottom: 8px">- Collaborated with cross-functional teams to troubleshoot and resolve production incidents, reducing downtime and improving system reliability.</p>
+		<p style="margin-bottom: 8px">- Troubleshoot and resolve production incidents, reducing downtime and improving system reliability.</p>
 		<p style="margin-bottom: 8px">- Upgraded Java, migrated from Apache Tiles to Thymeleaf and updating Maven dependencies, improving page load speeds and cut maintenance overhead.</p>
 		<p style="margin-bottom: 8px">- Integrated new products into existing system, ensuring seamless interoperability with upstream/downstream systems.</p>
-		<p>- Collaborated with cross-functional teams to refactor code and optimise system flows, improving performance through bulk updates, reduced database calls and fewer connection cycles by around 15%.</p>
+		<p>- Collaborated with cross-functional teams to streamline system flows and refactor legacy code, reducing processing time by ~30% for core calculations and improving long-term maintainability.</p>
 		`
 	},
 	{
